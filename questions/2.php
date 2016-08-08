@@ -53,7 +53,7 @@
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-1"></div>
 									<div class="ch-info-back">
-										<h2>Yes</h2>
+										<h3>Yes</h3>
 									
 									</div>	
 								</div>
@@ -71,7 +71,7 @@
                                     <div class="ch-info">                   
                                         <div class="ch-info-front ch-img-2"></div>                 
                                             <div class="ch-info-back">
-                                                <h2>No</h2>
+                                                <h3>No</h3>
                                                 
                                             </div>
                                     </div>
@@ -88,7 +88,7 @@
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-3"></div>
 									<div class="ch-info-back">
-										<h3>I don't know</h3>
+										<h4>I don't know</h4>
 									
 									</div>
 								</div>

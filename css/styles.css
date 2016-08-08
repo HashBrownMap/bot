@@ -30,6 +30,10 @@ html, body
     color: 1f61a1;
 }
 
+li h3{
+    font-weight: 700;
+}
+
 .content h4{
     
     text-align: center;
