@@ -8,6 +8,7 @@ html, body
     width: 100%;
     height: 100%;
     font-family: 'Lato', sans-serif;
+
    
 }
 
@@ -17,26 +18,54 @@ html, body
     
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%);    
+    color: #103b65;
+    
 }
 
 .content h1{
-    font-weight: bold;
+    font-weight: 900;
+    z-index: 205;
+    font-size: 270%;
+    color: 1f61a1;
 }
 
-.l{
-    padding-left: 12rem;
-    padding-top: 1rem;
+.content h4{
+    
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+a{
+    font-size: 130%;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none !important;
+}
+
+
+.lefty{
+    margin-left: 1.5rem;
+    padding-top: 1.8rem;
 }
 
 .middle{
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .rig{
     text-align: right;
-    padding-right: 2rem;
+    margin-right: 3rem;
+    padding-top: 1.8rem;
+}
+
+.container img{
+    max-height:  25%;
+    max-width: 25%;
+    margin-bottom: -8rem;
+    z-index: 200;
 }
 
 
@@ -47,7 +76,9 @@ html, body
   z-index: 999;
   width: 100%;
   height: 23px;
+  font-weight: 600;
 }
+
 
 button{
     background: transparent;
@@ -58,4 +89,31 @@ button{
     overflow: hidden;
     outline:none;
     z-index: 2000;
+}
+.btn-primary{
+    background-color: white !important;
+    color: #103b65 !important;
+    
+    border-style: solid;
+    border-width: 2px !important;
+    border-color: #103b65 !important;
+
+    
+}
+ .btn-primary:hover{
+   background-color:  #103b65 !important;
+   color: white !important;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .content h4{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .container img{
+        max-width: 35%;
+    }
 }

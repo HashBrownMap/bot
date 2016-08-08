@@ -4,15 +4,16 @@
     <head>
         <meta charset="utf-8">
 
-        <title>The HTML5 Herald</title>
+        <title>How Much to Make a Bot</title>
         <meta name="description" content="How Much to Make a Bot">
         <meta name="author" content="Rhodium">
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+    <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="../css/styles.css">
         	<link rel="stylesheet" type="text/css" href="../css/common.css" />
         <link rel="stylesheet" type="text/css" href="../css/style6.css" />
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
         <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,11 +25,11 @@
 
             <div class="top">
             <div class="row">
-                <a href="#" class="col-md-4 l">Previous Question</a>
+                <a href="1.html" class="col-md-4 lefty">BACK</a>
                
                 
-                <h5 class="col-md-4 middle">HOW MUCH TO MAKE A BOT?</h5>
-                <h5 class="col-md-4 rig"><?php echo $_POST['answer']; ?> </h5>
+                <h4 class="col-md-4 hidden-md-down middle">HOW MUCH TO MAKE A BOT?</h4>
+                <h4 class="col-md-4 rig"><?php echo $_POST['answer']; ?> </h4>
             </div>
 
         </div>
@@ -36,9 +37,9 @@
 
 
             <div class="content">
-                <h1>Whats up?</h1>
+                <h1>Do you need xyz thing?</h1>
                 <br>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet pariatur ullam commodi iste temporibus praesentium, optio reiciendis quam esse odit, delectus qui eos mollitia! Perferendis iste ab ullam quibusdam?</h5>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet pariatur ullam commodi iste temporibus praesentium, optio reiciendis quam esse odit, delectus qui eos mollitia! Perferendis iste ab ullam quibusdam?</h4>
                 
             </div>
             <section class="main">
@@ -52,7 +53,7 @@
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-1"></div>
 									<div class="ch-info-back">
-										<h3>Services Image</h3>
+										<h2>Yes</h2>
 									
 									</div>	
 								</div>
@@ -70,7 +71,7 @@
                                     <div class="ch-info">                   
                                         <div class="ch-info-front ch-img-2"></div>                 
                                             <div class="ch-info-back">
-                                                <h3>Heart</h3>
+                                                <h2>No</h2>
                                                 
                                             </div>
                                     </div>
@@ -87,7 +88,7 @@
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-3"></div>
 									<div class="ch-info-back">
-										<h3>Art Print</h3>
+										<h3>I don't know</h3>
 									
 									</div>
 								</div>
