@@ -28,7 +28,7 @@
                 <a href="1.html" class="col-md-4 lefty">BACK</a>
                
                 
-                <h4 class="col-md-4 hidden-md-down middle">HOW MUCH TO MAKE A BOT?</h4>
+                <h4 class="col-md-4 hidden-md-down middle">HOW MUCH TO MAKE A BOT</h4>
                 <h4 class="col-md-4 rig"><?php echo $_POST['answer']; ?> </h4>
             </div>
 
