@@ -3,11 +3,10 @@
 
 html, body
 {
-
-
     width: 100%;
     height: 100%;
     font-family: 'Lato', sans-serif;
+    
 
    
 }
@@ -109,15 +108,108 @@ button{
    color: white !important;
 }
 
+.w3-progress-container{
+       position:absolute !important;
+   bottom:0 !important;
+   
+   height: 2em !important;
+
+   
+}
 
 
-@media screen and (max-width: 780px) {
+
+
+/* Smartphones (portrait and landscape) --  --  --  --  -- - */
+@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 480px) { 
+/* Styles */
     .content h4{
-        margin-right: 50px;
-        margin-left: 50px;
+        margin-right: 5px;
+        margin-left: 5px;
     }
-
+    a{
+        font-size: 240%;
+    }
+    .row h4{
+        font-size: 240%;
+    }
     .container img{
         max-width: 35%;
     }
-}
+
+ 
+} 
+ 
+/* Smartphones (landscape) --  --  --  --  -- - */
+@media only screen
+and (min-width : 321px) { 
+/* Styles */
+ 
+} 
+ 
+/* Smartphones (portrait) --  --  --  --  -- - */
+@media only screen
+and (max-width : 320px) { 
+
+ 
+} 
+   
+/* iPads (portrait and landscape) --  --  --  --  -- - */
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) { 
+/* Styles */
+    .content h4{
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    a{
+        font-size: 150%;
+    }
+    .row h4{
+        font-size: 150%;
+    }
+    .middle{
+        display: none;
+    }
+    .container img{
+        max-width: 35%;
+    }
+ 
+
+ 
+} 
+ 
+/* iPads (landscape) --  --  --  --  -- - */
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+/* Styles */
+ 
+} 
+ 
+/* iPads (portrait) --  --  --  --  -- - */
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+/* Styles */
+ 
+} 
+ 
+/* Desktops and laptops --  --  --  --  -- - */
+@media only screen
+and (min-width : 1224px) { 
+/* Styles */
+ 
+} 
+ 
+/* Large screens --  --  --  --  -- - */
+@media only screen
+and (min-width : 1824px) { 
+/* Styles */
+ 
+} 
