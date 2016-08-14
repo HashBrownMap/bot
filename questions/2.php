@@ -12,7 +12,6 @@
         <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" type="text/css" href="../css/common.css" />
         <link rel="stylesheet" type="text/css" href="../css/style6.css" />
 
         <!--[if lt IE 9]>
@@ -30,9 +29,10 @@
                 <?php 
                     $string = $_POST['answer'];
                     $total = (int)$string;
+                    
                 ?>
                 <h4 class="col-md-4 hidden-md-down middle">HOW MUCH TO MAKE A BOT</h4>
-                <h4 class="col-md-4 rig"><?php echo $string; ?> </h4>
+                <h4 class="rig">$<?php echo $string; ?> </h4>
             </div>
 
         </div>
@@ -51,7 +51,8 @@
 					<li>
 						<div class="ch-item ch-img-1">
                             <form action="3.php" method="POST">
-                            <button type="submit" name="answer" value="<php echo ($total + 500)."\n"; ?>">		
+                            <input type="hidden" name="prev" value="<?php echo $total; ?>">
+                            <button type="submit" name="answer" value="<?php echo ($total + 500); ?>">		
 							<div class="ch-info-wrap">
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-1"></div>
@@ -64,17 +65,19 @@
                             </button>	
                             </form>	
 						</div>
-                    
+                    <br>
+                        <h3>Yes</h3>
 					</li>
 					<li>
 						<div class="ch-item ch-img-2">
                             <form action="3.php" method="POST">
-                                <button type="submit" name="answer" value="<php echo ($total + 200)."\n"; ?>">
+                                <input type="hidden" name="prev" value="<?php echo $total; ?>">
+                                <button type="submit" name="answer" value="<?php echo $total; ?>">
                                 <div class="ch-info-wrap">                              
                                     <div class="ch-info">                   
                                         <div class="ch-info-front ch-img-2"></div>                 
                                             <div class="ch-info-back">
-                                                <h3>No</h3>
+                                                 <h3>No</h3>
                                                 
                                             </div>
                                     </div>
@@ -82,11 +85,14 @@
                                 </button>
                             </form>
 						</div>
+                        <br>
+                        <h3>No</h3>
 					</li>
 					<li>
 						<div class="ch-item ch-img-3">
                             <form action="3.php" method="POST">
-                            <button type="submit" name="answer" value="<php echo "$total"; ?>">		
+                            <input type="hidden" name="prev" value="<?php echo $total; ?>">
+                            <button type="submit" name="answer" value="<?php echo ($total + 200); ?>">		
 							<div class="ch-info-wrap">
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-3"></div>
@@ -99,6 +105,8 @@
                             </button>	
                             </form>	
 						</div>
+                        <br>
+                        <h3>Not sure</h3>
 					</li>
 				</ul>
 				

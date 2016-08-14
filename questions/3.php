@@ -21,19 +21,23 @@
     </head>
 
     <body>
+                <?php 
+                    $string = $_POST['answer'];
+                    $total = (int)$string;
+                    $prev = $_POST['prev'];
+                    $before = (int)$prev;
+                ?>
 
 
             <div class="top">
             <div class="row">
-                <a href="2.php" class="col-md-4 lefty">PREVIOUS QUESTION</a>
-               
+            <form action="2.php" method="POST">
+                <button name="answer" class="col-md-4 lefty" value="<?php echo $before; ?>">PREVIOUS QUESTION</button>
+            </form>
                 
                 <h4 class="col-md-4 hidden-md-down middle">HOW MUCH TO MAKE A BOT</h4>
-                <?php 
-                    $string = $_POST['answer'];
-                    $total = (int)$string;
-                ?>
-                <h4 class="col-md-4 rig">$<?php echo $string; ?> </h4>
+
+                <h4 class="rig">$<?php echo $string; ?> </h4>
             </div>
 
         </div>
@@ -66,7 +70,7 @@
                             </button>	
                             </form>	
 						</div>
-                    
+                    <br> <h3>Yes</h3>
 					</li>
 					<li>
 						<div class="ch-item ch-img-2">
@@ -83,7 +87,7 @@
                                 </div>
                                 </button>
                             </form>
-						</div>
+						</div> <br> <h3>No</h3>
 					</li>
 					<li>
 						<div class="ch-item ch-img-3">
@@ -100,7 +104,7 @@
 							</div>
                             </button>	
                             </form>	
-						</div>
+						</div> <br> <h3>I don't know</h3>
 					</li>
 				</ul>
 				

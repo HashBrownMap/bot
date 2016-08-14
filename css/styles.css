@@ -39,18 +39,42 @@ li h3{
     margin-right: 200px;
     margin-left: 200px;
 }
+
+.top button{
+    text-align: left !important;
+    padding: 0px 0px !important;
+        background: transparent;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    color: #103b65 ;
+    
+    font-size: 120%;
+}
+
+.top button:hover{
+    color: black ;
+}
+
+.top button:focus{
+    outline: 0 !important;
+}
+
 a{
     font-size: 130%;
     text-decoration: none;
+    color: #103b65 ;
+    
 }
 a:hover{
     text-decoration: none !important;
+     color: black ;
 }
 
 
 .lefty{
-    margin-left: 1.5rem;
-    padding-top: 1.8rem;
+    margin-left: 3rem;
+    margin-top: 1.8rem;
 }
 
 .middle{
@@ -83,7 +107,7 @@ a:hover{
 }
 
 
-button{
+.main button{
     background: transparent;
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -138,6 +162,7 @@ and (max-device-width : 480px) {
     .container img{
         max-width: 35%;
     }
+    .top button{font-size: 200%;}
 
  
 } 
