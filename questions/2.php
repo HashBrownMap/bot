@@ -27,9 +27,12 @@
             <div class="row">
                 <a href="1.html" class="col-md-4 lefty">BACK</a>
                
-                
+                <?php 
+                    $string = $_POST['answer'];
+                    $total = (int)$string;
+                ?>
                 <h4 class="col-md-4 hidden-md-down middle">HOW MUCH TO MAKE A BOT</h4>
-                <h4 class="col-md-4 rig"><?php echo $_POST['answer']; ?> </h4>
+                <h4 class="col-md-4 rig"><?php echo $string; ?> </h4>
             </div>
 
         </div>
@@ -47,8 +50,8 @@
 				<ul class="ch-grid">
 					<li>
 						<div class="ch-item ch-img-1">
-                            <form action="" method="POST">
-                            <button type="submit">		
+                            <form action="3.php" method="POST">
+                            <button type="submit" name="answer" value="<php echo ($total + 500)."\n"; ?>">		
 							<div class="ch-info-wrap">
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-1"></div>
@@ -65,8 +68,8 @@
 					</li>
 					<li>
 						<div class="ch-item ch-img-2">
-                            <form action="" method="POST">
-                                <button type="submit">
+                            <form action="3.php" method="POST">
+                                <button type="submit" name="answer" value="<php echo ($total + 200)."\n"; ?>">
                                 <div class="ch-info-wrap">                              
                                     <div class="ch-info">                   
                                         <div class="ch-info-front ch-img-2"></div>                 
@@ -82,8 +85,8 @@
 					</li>
 					<li>
 						<div class="ch-item ch-img-3">
-                            <form action="" method="POST">
-                            <button type="submit">		
+                            <form action="3.php" method="POST">
+                            <button type="submit" name="answer" value="<php echo "$total"; ?>">		
 							<div class="ch-info-wrap">
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-3"></div>
@@ -109,4 +112,20 @@
             </div>
 
     </body>
+<!--
+    <script> 
+    $(document).ready(function(){
+        var value = 
+        $("button").click(function(){
+            $.ajax({
+                type: "POST",
+                url: "3.php",
+                data:  ,
+                success: function(result){
+                $("#div1").html(result);
+            }});
+        });
+    });</script>
+-->
+    
 </html>
