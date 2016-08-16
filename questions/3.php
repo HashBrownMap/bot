@@ -22,17 +22,20 @@
 
     <body>
                 <?php 
+                    
                     $string = $_POST['answer'];
                     $total = (int)$string;
-                    $prev = $_POST['prev'];
-                    $before = (int)$prev;
+                    $fir = $_POST['first'];
+                    $first = (int)$fir;
+                
                 ?>
 
 
             <div class="top">
             <div class="row">
             <form action="2.php" method="POST">
-                <button name="answer" class="col-md-4 lefty" value="<?php echo $before; ?>">PREVIOUS QUESTION</button>
+                
+                <button name="answer" class="col-md-4 lefty" value="<?php echo ($total - $first); ?>">PREVIOUS QUESTION</button>
             </form>
                 
                 <h4 class="col-md-4 hidden-md-down middle">HOW MUCH TO MAKE A BOT</h4>
@@ -45,7 +48,7 @@
 
 
             <div class="content">
-                <h1>Do you need xyz thing?</h1>
+                <h1>Does your bot require users to have an account?</h1>
                 <br>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet pariatur ullam commodi iste temporibus praesentium, optio reiciendis quam esse odit, delectus qui eos mollitia! Perferendis iste ab ullam quibusdam?</h4>
                 
@@ -55,9 +58,10 @@
 				<ul class="ch-grid">
 					<li>
 						<div class="ch-item ch-img-1">
-                            <form action="3.php" method="POST">
-
-                            <button type="submit" name="answer" value="900">		
+                            <form action="4.php" method="POST">
+                            <input type="hidden" name="first" value="<?php echo $fir; ?>">
+                            <input type="hidden" name="second" value="700">
+                            <button type="submit" name="answer" value="<?php echo ($total + 700); ?>">		
 							<div class="ch-info-wrap">
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-1"></div>
@@ -74,8 +78,10 @@
 					</li>
 					<li>
 						<div class="ch-item ch-img-2">
-                            <form action="3.php" method="POST">
-                                <button type="submit" name="answer" value="900">	
+                            <form action="4.php" method="POST">
+                                <input type="hidden" name="first" value="<?php echo $fir; ?>">
+                                <input type="hidden" name="second" value="0">
+                                <button type="submit" name="answer" value="<?php echo $total; ?>">	
                                 <div class="ch-info-wrap">                              
                                     <div class="ch-info">                   
                                         <div class="ch-info-front ch-img-2"></div>                 
@@ -91,13 +97,15 @@
 					</li>
 					<li>
 						<div class="ch-item ch-img-3">
-                            <form action="3.php" method="POST">
-                            <button type="submit" name="answer" value="0">	
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-3"></div>
-									<div class="ch-info-back">
-										<h4>I don't know</h4>
+                            <form action="4.php" method="POST">
+                                <input type="hidden" name="first" value="<?php echo $fir; ?>">
+                                <input type="hidden" name="second" value="500">
+                                <button type="submit" name="answer" value="<?php echo ($total + 500); ?>">	
+                                <div class="ch-info-wrap">
+                                    <div class="ch-info">
+                                        <div class="ch-info-front ch-img-3"></div>
+                                        <div class="ch-info-back">
+                                            <h4>I don't know</h4>
 									
 									</div>
 								</div>
@@ -110,12 +118,7 @@
 				
 			</section>
                     </div>
-                        <div class="w3-progress-container">
-            <div id="myBar" class="w3-progressbar w3-dark-grey" style="width:40%">
-
-                <!-- <div class="w3-center w3-text-white">20%</div> -->
-            </div>
-            </div>
+                      
 
     </body>
 </html>
