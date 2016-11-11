@@ -13,7 +13,7 @@
 
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" type="text/css" href="../css/style6.css" />
-
+        <link rel="stylesheet" href="../css/animate.css">
         <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -32,24 +32,24 @@
                     
                     
                 ?>
-                <h4 class="col-md-4 hidden-md-down middle">HOW MUCH TO MAKE A BOT</h4>
-                <h4 class="rig">$<?php echo $string; ?> </h4>
+                <h5 class="col-md-4 hidden-md-down middle">HOW MUCH TO MAKE A BOT</h5>
+                <h5 class="rig">$<?php echo $string; ?> </h5>
             </div>
 
         </div>
         <div class="container">
 
 
-            <div class="content">
+            <div class="content animated fadeIn">
                 <h1>Do you need xyz thing?</h1>
                 <br>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet pariatur ullam commodi iste temporibus praesentium, optio reiciendis quam esse odit, delectus qui eos mollitia! Perferendis iste ab ullam quibusdam?</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet pariatur ullam commodi iste temporibus</h5>
                 
             </div>
             <section class="main">
 			
 				<ul class="ch-grid">
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="0.3s">
 						<div class="ch-item ch-img-1">
                             <form action="3.php" method="POST">
                             <input type="hidden" name="first" value="500">
@@ -69,7 +69,7 @@
                     <br>
                         <h3>Yes</h3>
 					</li>
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="0.6s">
 						<div class="ch-item ch-img-2">
                             <form action="3.php" method="POST">
                                 <input type="hidden" name="first" value="0">
@@ -89,7 +89,7 @@
                         <br>
                         <h3>No</h3>
 					</li>
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="0.9s">
 						<div class="ch-item ch-img-3">
                             <form action="3.php" method="POST">
                             <input type="hidden" name="first" value="200">
@@ -107,12 +107,19 @@
                             </form>	
 						</div>
                         <br>
-                        <h3>Not sure</h3>
+                        <h3>I don't know</h3>
 					</li>
 				</ul>
 				
 			</section>
                     </div>
+
+                    
+        <script src="../js/wow.min.js"></script>
+        <script type="text/javascript">
+            new WOW().init();
+        </script>
+
                         
 
     </body>
@@ -131,5 +138,7 @@
         });
     });</script>
 -->
+
+
     
 </html>
