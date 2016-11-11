@@ -12,7 +12,7 @@
         <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" type="text/css" href="../css/common.css" />
+
         <link rel="stylesheet" type="text/css" href="../css/style6.css" />
         <link rel="stylesheet" href="../css/animate.css">
         <!--[if lt IE 9]>

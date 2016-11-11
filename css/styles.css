@@ -42,7 +42,7 @@ li h3{
 
 .top button{
     text-align: left !important;
-    padding: 0px 0px !important;
+
         background: transparent;
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -73,13 +73,15 @@ a:hover{
 
 
 .lefty{
-    margin-left: 3rem;
+    margin-left: 1.5rem;
+   
     margin-top: 1.8rem;
 }
 
 .middle{
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1.9rem;
+    font-weight: bold;
 }
 
 .rig{
