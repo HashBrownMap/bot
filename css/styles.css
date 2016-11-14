@@ -141,7 +141,34 @@ a:hover{
    
 }
 
+.container#text{
+    align-content: center;
+    width: 100%;
+    align-items: center;
+}
 
+#box{
+    width: 100%;
+}
+
+.main-text{
+    font-weight: 600;
+}
+#price{
+    font-size: 250%;
+    font-weight: 600;
+}
+
+.about-text {
+    background: rgba(255,255,255,0.8);
+    color:#103b65;
+    padding: 6.875rem 3rem;
+    align-content: center;
+}
+
+#final{
+    font-weight: 700;
+}
 
 
 /* Smartphones (portrait and landscape) --  --  --  --  -- - */

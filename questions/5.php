@@ -62,7 +62,6 @@
 					<li>
 						<div class="ch-item ch-img-1">
                             <form action="5.php" method="POST">
-                            <input type="hidden" name="prev" value="<?php echo $total; ?>">
                             <button type="submit" name="answer" value="<?php echo ($total + 300); ?>">		
 							<div class="ch-info-wrap">
 								<div class="ch-info">
@@ -81,7 +80,7 @@
 					<li>
 						<div class="ch-item ch-img-2">
                             <form action="5.php" method="POST">
-                                <input type="hidden" name="prev" value="<?php echo $total; ?>">
+                                
                                 <button type="submit" name="answer" value="<?php echo $total; ?>">	
                                 <div class="ch-info-wrap">                              
                                     <div class="ch-info">                   
@@ -99,7 +98,7 @@
 					<li>
 						<div class="ch-item ch-img-3">
                             <form action="5.php" method="POST">
-                            <input type="hidden" name="prev" value="<?php echo $total; ?>">
+                            
                             <button type="submit" name="answer" value="<?php echo ($total + 50); ?>">	
 							<div class="ch-info-wrap">
 								<div class="ch-info">
