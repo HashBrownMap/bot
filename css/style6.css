@@ -10,8 +10,8 @@
 .ch-info-wrap, 
 .ch-info{
 	position: absolute;
-	width: 180px;
-	height: 180px;
+	width: 140px;
+	height: 140px;
 	border-radius: 50%;
 	
 	-webkit-transition: all 0.4s ease-in-out;
@@ -93,7 +93,7 @@
 	letter-spacing: 2px;
 	vertical-align: middle;
 	font-weight: 700;
-	padding: 70px 0 0 0;
+	padding: 55px 0 0 0;
 	height: 100px;
 	font-family: 'Open Sans', Arial, sans-serif;
 	text-shadow: 
@@ -107,7 +107,7 @@
 	letter-spacing: 2px;
 	vertical-align: middle;
 	font-weight: 700;
-	padding: 70px 0 0 0;
+	padding: 45px 0 0 0;
 	height: 100px;
 	font-family: 'Open Sans', Arial, sans-serif;
 	text-shadow: 
@@ -179,8 +179,8 @@
 }
 
 .ch-grid li {
-	width: 220px;
-	height: 220px;
+	width: 180px;
+	height: 180px;
 	display: inline-block;
 	margin: 50px;
 }
