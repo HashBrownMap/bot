@@ -28,9 +28,9 @@
 
         <div class="top">
              <div class="row" id="last" style="color:white;">
-                <a href="../index.html" class="col-md-4 lefty">BACK</a>
-                <h4 class="col-md-4 hidden-md-down middle">HOW MUCH TO MAKE A BOT</h4>
-                <h4 class=" rig"> </h4>
+                
+                <h4 class="middle">HOW MUCH TO MAKE A BOT</h4>
+                
             </div>
 
         </div>
@@ -44,7 +44,9 @@
                         <h1 id="price"> $<?php echo $string; ?></h1>
                         <br>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem officiis omnis excepturi praesentium dicta, odio, voluptas error. Asperiores ipsa tempora sapiente molestias dolore saepe repellat. Dignissimos saepe libero doloremque totam!</p>
-                     <a id="final" href="questions/1.html" class="btn btn-primary btn-lg">FIND OUT MORE ABOUT RHODIUM <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                     <a id="final" href="1.html" class="btn btn-primary btn-lg">START OVER<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                     <hr>
+                     <a id="final" href="#" class="btn btn-primary btn-lg">FIND OUT MORE ABOUT "_____"  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
                     </div>
                 </div>
             </div>
